@@ -1,0 +1,6 @@
+{
+  "name": "Crop Emergency Assistant",
+  "description": "Real-time agricultural emergency advisor for farmers. Identify crop issues via images or text, get rescue steps, and track farm health analytics.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["Image Analysis", "Voice Assistant", "Analytics Dashboard"]
+}

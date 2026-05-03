@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-bounce-h: bounce-h 1s infinite;
+  --animate-ring: ring 2s infinite ease-in-out;
+}
+
+@keyframes ring {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(15deg); }
+  50% { transform: rotate(-15deg); }
+  75% { transform: rotate(5deg); }
+}
+
+@keyframes bounce-h {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+  h1, h2, h3, h4, .font-display {
+    @apply font-display;
+  }
+}
+
+.animate-bounce-h {
+  animation: bounce-h 1s infinite;
+}
